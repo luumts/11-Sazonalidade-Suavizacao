@@ -1,4 +1,8 @@
 #Aula 11
+remove.packages(c("ggplot2", "data.table"))
+install.packages('Rcpp', dependencies = TRUE)
+install.packages('ggplot2', dependencies = TRUE)
+install.packages('data.table', dependencies = TRUE)
 
 install.packages("Hmisc")      #Instala Pacote Hmisc  
 install.packages("forecast")
