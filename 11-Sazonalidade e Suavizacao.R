@@ -25,7 +25,7 @@ Grafico <- ts(Tabela1, start = 2008, frequency = 12)                 #Cria a Ser
 
 plot(Grafico, plot.type= "single", col=c("Black","Blue"))            #Cria o gráfico da série de dados e de médias móveis conjuntamente.
 z <- lm(IPCA.df$IPCA~IPCA.df$Ano.Mês)                                #Regride os dados em relação ao tempo e verifica a tendência
-abline(z, col="Green")                                               #Coloca a linha de regressão de tendência no gráfico
+abline(z, col="Red")                                               #Coloca a linha de regressão de tendência no gráfico
 summary(z)
 
 tabela2 <- as.data.frame(Tabela1$IPCA/Tabela1$`Média Móvel`)
